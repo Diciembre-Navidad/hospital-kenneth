@@ -16,8 +16,8 @@ class DatabaseSeeder extends Seeder
         $cardio = Especialidad::create(['nombre' => 'Cardiología']);
         $pediatria = Especialidad::create(['nombre' => 'Pediatría']);
 
-        Medico::create(['nombre' => 'Dra. Emil Zanei', 'cedula' => '1000001', 'especialidad_id' => $general->id, 'activo' => 1]);
-        Medico::create(['nombre' => 'Dr. Carlos Ruiz', 'cedula' => '1000002', 'especialidad_id' => $cardio->id, 'activo' => 1]);
+        Medico::create(['nombre' => 'Dr. Emil Zanei', 'cedula' => '1000001', 'especialidad_id' => $general->id, 'activo' => 1]);
+        Medico::create(['nombre' => 'Dr. Gael Samsung', 'cedula' => '1000002', 'especialidad_id' => $cardio->id, 'activo' => 1]);
         Medico::create(['nombre' => 'Dr. Jorge Barrios', 'cedula' => '1000003', 'especialidad_id' => $pediatria->id, 'activo' => 0]);
 
         Consultorio::create(['nombre' => 'Consultorio 1']);
